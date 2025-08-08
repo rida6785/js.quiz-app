@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen" id="start-screen">
+            <h1>WELCOME TO QUIZ APP</h1>
+            <button id="start-button">Start Quiz</button>
+        </div>
+
+        <div class="quiz-header hide">
+            <h1>Quiz App</h1>
+            <div class="quiz-info">
+                <span class="question-count">Question: <span id="current">1</span>/<span id="total">10</span></span>
+                <span class="timer">Time: <span id="time">60</span>s</span>
+                <span class="score">Score: <span id="score">0</span></span>
+            </div>
+        </div>
+
+        <div class="quiz-body hide">
+            <div class="question-container">
+                <h2 id="question">Question goes here??</h2>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Option A</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Option B</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Option C</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Option D</label>
+                    </div>
+                </div>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+        <div class="result-container hide">
+            <h2>Quiz Completed!</h2>
+            <p>Your score: <span id="final-score">0</span>/100</p>
+            <p>Time: <span id="completion-time">0</span> seconds</p>
+            <button id="restart">Restart Quiz</button>
+        </div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
